@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site title
-title: BlogBox
+title: Nathan B
 
 # Below the site title
-tagline: Tales of a digital nomad.
+tagline: Network / System administration blog.
 
 # Site logo
 logo:
@@ -19,7 +19,7 @@ description: |
   BlogBox is a bold theme for the Jekyll blogging platform. Available for purchase at ThemeForest.net.
 
 # The base hostname & protocol of your site for where absolute urls are needed
-url: https://blogbox.netlify.app
+url: https://nathanarkov.github.io/
 
 # The subpath of your site, if you want to host your path on a subpath like on GitHub Pages. e.g. /blog
 baseurl:
@@ -39,7 +39,7 @@ navigation:
   url: /tags/
 
 # Author information - author info at the bottom of the post
-author_name: "John Doe"
+author_name: "Nathan B"
 author_bio: "My name is John Doe. I’m a full-time adventure travel blogger and photographer who’s been exploring the world for over 6 years."
 author_url: "https://justgoodthemes.com"
 author_location: "Vilnius, Lithuania"
