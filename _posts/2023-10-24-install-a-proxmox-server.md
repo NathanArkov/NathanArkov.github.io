@@ -2,8 +2,8 @@
 layout: post
 title:  "How to install a Proxmox Virtual Environment server"
 date:   2023-10-24
-featured_image: grand-canyon.jpg
-tags: [Travel, Blogging]
+featured_image: 2023-10-24/blog-thumbnail.png
+tags: [Homelab, Linux, Virtual Machines]
 ---
 
 <a href="https://en.wikipedia.org/wiki/Grand_Canyon">**The Grand Canyon**</a> is a steep-sided canyon carved by the Colorado River in the state of Arizona in the United States. It is contained within and managed by Grand Canyon National Park, the Kaibab National Forest, Grand Canyon-Parashant National Monument, the Hualapai Tribal Nation, the Havasupai people and the Navajo Nation. President Theodore Roosevelt was a major proponent of preservation of the Grand Canyon area, and visited it on numerous occasions to hunt and enjoy the scenery.
