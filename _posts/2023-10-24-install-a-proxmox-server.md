@@ -2,7 +2,7 @@
 layout: post
 title:  "How to install a Proxmox Virtual Environment server"
 date:   2023-10-24
-featured_image: 2023-10-24/blog-thumbnail.png
+featured_image: 2023-10-24-proxmox-installation/blog-thumbnail.png
 tags: [Homelab, Linux, Virtual Machines]
 ---
 
