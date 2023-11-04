@@ -41,6 +41,90 @@ curl https://repo.jellyfin.org/install-debuntu.sh | sudo bash
 
 ## qBittorrent installation
 
+qBittorrent is also kind of quick, with minimal tweakering needed. 
+
+### Step 1
+
+First, you will need to install qBittorrent-nox using apt.
+> **Note:** qbittorrent-nox is more suited for headless systems and includes a web interface for management, while qbittorrent is a graphical client.
+
+```bash
+sudo apt install qbittorrent-nox
+```
+
+### Step 2
+
+For security reasons, it is preferable to run qBittorrent as an unprivileged user (non-root). So we will create a new user and a new group for qBittorrent.
+
+```bash
+sudo adduser --sytem --group qbittorrent-nox
+```
+> Since this user will only be used by qBittorrent process, we create it as a *system* user, which doesn't have the same capabilities as a regular user.
+
+We will also need to add our user to the qBittorrent-nox group. In my case, my username is nathan.
+
+```bash
+sudo adduser nathan qbittorrent-nox
+```
+
+### Step 3
+
+Last step, we will create a Systemd service file for qbittorent-nox. This config file will define how the service will run.
+
+```bash
+sudo nano /etc/systemd/system/qbittorrent-nox.service
+```
+
+In this file, we are going to copy the following lines:
+
+```plain
+[Unit]
+Description=qBittorrent Command Line Client
+After=network.target
+
+[Service]
+Type=forking
+User=qbittorrent-nox
+Group=qbittorrent-nox
+UMask=007
+ExecStart=/usr/bin/qbittorrent-nox -d --webui-port=8080
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+
+We can now save and close this file by pressing **CTRL+X** then **Y** then **ENTER**.
+
+Finally, we will reload the systemd daemon, start and enable qbittorrent-nox.
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl start qbittorrent-nox
+sudo systemctl enable qbittorrent-nox
+```
+
+The command `systemctl status qbittorrent-nox` tell us if the service is correctly running.
+
+{% include image_full.html imageurl="/images/posts/2023-10-31-make-your-own-media-server/qbittorrent-status.PNG" title="command output" caption="command output" %}
+
+### Conclusion
+
+We can now acces qBittorrent web interface on http://localhost:8080 (or if you're accessing it remotely, http://serverip:8080).
+
+{% include image_full.html imageurl="/images/posts/2023-10-31-make-your-own-media-server/qbittorrent-webui.PNG" title="qBittorrent Web UI" caption="qBittorrent Web UI" %}
+
+### Troubleshooting
+
+If `systemctl status qbittorrent-nox` gives you an error, it is most likely due to qBittorrent not being able to create required directories. The following commands should fix this:
+
+```bash
+sudo mkdir /home/qbittorrent-nox
+sudo chown qbittorrent-nox:qbittorrent-nox /home/qbittorrent-nox
+sudo usermod -d /home/qbittorrent-nox qbittorrent-nox
+sudo systemctl start qbittorrent-nox
+```
+
 ## Radarr, Sonarr, Lidarr, Readarr installation
 
 
