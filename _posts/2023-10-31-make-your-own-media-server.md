@@ -2,8 +2,8 @@
 layout: post
 title:  "How to make your own media server at home with Jellyfin and the Arr stack"
 date:   2023-10-31
-featured_image: grand-canyon.jpg
-tags: [Travel, Blogging]
+featured_image: 2023-10-31-make-your-own-media-server/blog-thumbnail.png
+tags: [Linux, Homelab, Virtual Machines]
 ---
 
 Have you ever wanted to free yourself from your multiple monthly subscription to Netflix, Amazon Prime Video, Disney+, etc ? **Self-hosting is the answer**. Today, I'm going to show you how you can build your own media server to download, manage and -most importantly- watch your favorite movies and show. For this, you will either need **a server** (an old computer will most likely do the trick) or **a virtual machine** running 24/7 (or everytime you want to watch something).
