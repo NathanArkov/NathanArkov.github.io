@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to make your own media server at home with Jellyfin and the Arr stack"
+title:  "My homelab setup (November 2023)"
 date:   2023-11-19
 featured_image: 2023-11-19-my-homelab-setup/blog-thumbnail.png
 tags: [Networking, Homelab]
