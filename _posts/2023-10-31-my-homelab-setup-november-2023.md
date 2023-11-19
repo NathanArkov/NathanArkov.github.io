@@ -65,7 +65,7 @@ Being two dumbs IT student we jumped in the car and got there the same night, wh
 
 Long story short, I kept some computers, the **DELL PowerEdge 2850** and the **FUJITSU PRIMERGY RX300 S3**. 
 
-{% include image_full.html imageurl="/images/posts/2023-11-19-my-homelab-setup/rack1.jpg" title="Bunch of rack mounted stuff" caption="Bunch of rack mounted stuff" %}
+{% include image_full.html imageurl="/images/posts/2023-11-19-my-homelab-setup/rack-1.jpg" title="Bunch of rack mounted stuff" caption="Bunch of rack mounted stuff" %}
 
 I got lucky and both where full and working, only missing redondant PSUs. The only thing I had to check was on the Fujitsu, as the power button was broken. So I quickly got the PCB, desoldered the old button and soldered a new one - *works like a charm*.
 
