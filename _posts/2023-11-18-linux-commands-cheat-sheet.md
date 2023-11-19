@@ -2,7 +2,7 @@
 layout: post
 title:  "Linux commands 101"
 date:   2023-11-18
-featured_image: 2023-11-18-linx-commands-cheat-sheet/blog-thumbnail.png
+featured_image: 2023-11-18-linx-commands-cheat-sheets/blog-thumbnail.png
 tags: [Linux, Cheat-Sheet]
 ---
 
