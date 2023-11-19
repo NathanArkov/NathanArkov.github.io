@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Linux commands 101"
-date:   2023-10-31
-featured_image: 2023-10-31-make-your-own-media-server/blog-thumbnail.png
+date:   2023-11-18
+featured_image: 2023-11-18-linx-commands/blog-thumbnail.png
 tags: [Linux, Cheat-Sheet]
 ---
 

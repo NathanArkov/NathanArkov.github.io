@@ -110,7 +110,7 @@ The command `systemctl status qbittorrent-nox` tell us if the service is correct
 
 ### Conclusion
 
-We can now acces qBittorrent web interface on http://localhost:8080 (or if you're accessing it remotely, http://serverip:8080).
+We can now acces qBittorrent web interface on http://localhost:8080 (or if you're accessing it remotely, http://SERVERIP:8080).
 
 {% include image_full.html imageurl="/images/posts/2023-10-31-make-your-own-media-server/qbittorrent-webui.PNG" title="qBittorrent Web UI" caption="qBittorrent Web UI" %}
 
