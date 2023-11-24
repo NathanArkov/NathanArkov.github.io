@@ -43,13 +43,13 @@ When designing a network, we create **diagrams** following some conventions. In 
 
 ### Physical Topology Diagrams
 
-{% include image_full.html imageurl="/images/posts/2023-11-24-ccna/physical-topology-diagram.png" title="Physical topology diagram example" caption="Physical topology diagram example" %}
+{% include image_full.html imageurl="/images/posts/2023-11-24-ccna/physical-topology-diagram.PNG" title="Physical topology diagram example" caption="Physical topology diagram example" %}
 
 This type of topology diagrams informs us about the **physical location** of devices in the installation. You can clearly see room numbers, shelf numbers...
 
 ### Logical Topology Diagrams
 
-{% include image_full.html imageurl="/images/posts/2023-11-24-ccna/logical-topology-diagram.png" title="Logical topology diagram example" caption="Logical topology diagram example" %}
+{% include image_full.html imageurl="/images/posts/2023-11-24-ccna/logical-topology-diagram.PNG" title="Logical topology diagram example" caption="Logical topology diagram example" %}
 
 This type of topology diagram informs us about the **devices, ports and addressing** of the network. You can see what type of network media is used to connect devices and on which interface it is plugged in.
 
